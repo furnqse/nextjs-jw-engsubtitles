@@ -47,7 +47,7 @@ const Home: NextPage = () => {
     <div className={styles.container}>
       <form className="mx-auto w-full max-w-sm" onSubmit={handlesubmit}>
   <div className="flex items-center border-b border-teal-500 py-2">
-    <input ref={titleRef} className="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Jane Doe" aria-label="Full name" />
+    <input ref={titleRef} className="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="動画のurl" aria-label="Full name" />
     <button className="flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded" type="submit">
       取得
     </button>

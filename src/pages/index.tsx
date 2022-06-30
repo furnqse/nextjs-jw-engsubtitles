@@ -31,13 +31,13 @@ const Home: NextPage = () => {
         const data = res.json();
         return data;
       })
-      .then((data) => setData(data.media[0].files.filter(f => 'subtitles' in f)[0].subtitles.url));
+      .then((data) => setData(data.media[0].files.filter((f:any) => 'subtitles' in f)[0].subtitles.url));
     fetch(`https://b.jw-cdn.org/apis/mediator/v1/media-items/E/${lank}?clientType=www`)
       .then((res) => {
         const edata = res.json();
         return edata;
       })
-      .then((edata) => setEdata(edata.media[0].files.filter(f => f.label == '720p')[0].progressiveDownloadURL));
+      .then((edata) => setEdata(edata.media[0].files.filter((f:any) => f.label == '720p')[0].progressiveDownloadURL));
       // console.log(data)
       // console.log(edata)
   };
